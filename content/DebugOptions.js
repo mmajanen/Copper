@@ -39,7 +39,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 Copper.initDebugContentFormats = function() {
-	for (var i = 0; i<100; ++i) {
+	for (var i = 0; i<22003; ++i) { //was i<100; MiM for 22002
 		var name = '';
 		if ( (name = Copper.getContentFormatName(i))!='unknown/unknown') {
 		

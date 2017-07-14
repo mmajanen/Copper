@@ -133,6 +133,10 @@ Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_TLV", function()
 Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_JSON", function() { return 1543; });
 Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_OPAQUE", function() { return 1544; });
 
+Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_HSML_JSON", function() {return 22000; }); //MiM for HSML
+Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_HSML_LINK_JSON", function() {return 22001; }); //MiM for HSML
+Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_HSML_ITEM_JSON", function() {return 22002; }); //MiM for HSML
+
 Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_THING_DESCRIPTION_JSON", function() { return 65200; });
 Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_BULLETIN_BOARD_JSON", function() { return 65201; });
 Copper.__defineGetter__("CONTENT_TYPE_APPLICATION_LIGHTING_CONFIG_JSON", function() { return 65202; });
@@ -243,6 +247,10 @@ Copper.getContentFormatName = function(type) {
 	case Copper.CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_TLV: return 'application/vnd.oma.lwm2m+tlv'; break;
 	case Copper.CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_JSON: return 'application/vnd.oma.lwm2m+json'; break;
 	case Copper.CONTENT_TYPE_APPLICATION_VND_OMA_LWM2M_OPAQUE: return 'application/vnd.oma.lwm2m+opaque'; break;
+	case Copper.CONTENT_TYPE_APPLICATION_HSML_JSON: return 'application/hsml+json'; break; //MiM for HSML
+	case Copper.CONTENT_TYPE_APPLICATION_HSML_LINK_JSON: return 'application/hsml.link+json'; break; //MiM for HSML
+	case Copper.CONTENT_TYPE_APPLICATION_HSML_ITEM_JSON: return 'application/hsml.item+json'; break; //MiM for HSML
+	    
 	default: return 'unknown/unknown';
 	}
 };
