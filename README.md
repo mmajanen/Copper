@@ -9,6 +9,7 @@ A Firefox add-on to browse the Internet of Things
 -------------------------------------------------
 
 ### How to integrate the Copper sources into Firefox:
+0. Copy the .xpi file to your Linux computer, then select Tools – add-ons – install from file in Firefox. You may have to allow unsigned add-ons by opening about:config and setting xpinstall.signature.required to false. If everything works, skip the rest of the steps. (MiM)
 
 1. Get the sources from Github: `clone git://github.com/mkovatsc/Copper.git`
 2. Add a text file named `copper@vs.inf.ethz.ch` to your extension directory of your profile:
